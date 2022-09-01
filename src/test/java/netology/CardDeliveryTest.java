@@ -22,7 +22,7 @@ public class CardDeliveryTest {
     @Test
     public void shouldTestMap() {
         Configuration.holdBrowserOpen = true;
-        open("http://0.0.0.0:7777");
+        open("http://localhost:7777");
         $x("//input[@placeholder='Город']").val("Новосибирск");
         $x("//input[@placeholder='Дата встречи']").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $x("//input[@placeholder='Дата встречи']").val(strData);
